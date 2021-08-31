@@ -1,0 +1,141 @@
+/* TODO : CSS파일을 편집하여 원하는 스타일의 계산기를 만들어보세요 :) */
+
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  color: #000;
+}
+
+body {
+  background-image: url('./data/codestates-motif.png');
+}
+
+/*
+  Calculator styles
+*/
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background-color: #32ffb7;
+  border: solid 4px gray;
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+
+.calculator__display--bare {
+  display: none;
+  background-color: rgb(230, 230, 230);
+
+  text-align: center;
+  vertical-align: middle;
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 25px 15px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.calculator__display--bare > span {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  background-color: #000000;
+  margin: 5px;
+  width: 40px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px 5px;
+}
+
+.calculator__display--for-advanced {
+  /* display: none; 이 줄을 모두 지우면 advanced 테스트를 하실 수 있습니다. */
+  background-color: #ffffff;
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: right;
+  vertical-align: middle;
+  padding: 25px 15px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.calculator__buttons {
+  background-color: #ffffff;
+  width: 100%;
+  height: 330px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.clear__and__enter {
+  display: flex;
+  height: 50px;
+  margin: 10px;
+  background-color: #f3f0fc;
+}
+
+.clear__and__enter > button {
+  border-radius: 10px;
+  width: 50%;
+  height: 40px;
+  margin: 5px 5px;
+  background-color: #00da75;
+  cursor: pointer;
+  outline: none;
+}
+
+.button__row {
+  display: flex;
+  height: 50px;
+  margin: 10px;
+  background-color: #f3f0fc;
+}
+
+.button__row > button {
+  width: 25%;
+  height: 40px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  background-color: #d4d4d4;
+}
+
+.button__row > .operator {
+  width: 25%;
+  color: #ffffff;
+  background-color: #313132;
+}
+
+.button__row > .double {
+  width: 54.5%;
+}
+
+.button__row > .isPressed {
+  background-color: #00da75;
+}
+
+.logo {
+  position: fixed;
+  padding: 30px;
+  bottom: 0px;
+  right: 0px;
+}

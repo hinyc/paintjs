@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>PaintJS</title>
-</head>
-
-<body>
-    <canvas id="jsCanvas" class="canvas"></canvas>
-    <div class="controls">
-        <div class="controls_range">
-            <input type="range" id=jsRange min="0.1" max="5" value="2.5" step="0.1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet" />
+    <link rel="stylesheet" href="./yourStyle.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="calculator__display--bare">
+          <span class="calculator__operend--left">0</span>
+          <span class="calculator__operator">+</span>
+          <span class="calculator__operend--right">0</span>
+          <span class="calculator__equal">=</span>
+          <span class="calculator__result">0</span>
         </div>
-        <div class="controls_btns">
-            <button id="jsMode">fill</button>
-            <button id="jsSave">save</button>
+        <div class="calculator__display--for-advanced">0</div>
+        <div class="calculator__buttons">
+          <div class="clear__and__enter">
+            <button class="clear">AC</button>
+            <button class="calculate">Enter</button>
+          </div>
+          <div class="button__row">
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator">+</button>
+          </div>
+          <div class="button__row">
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator">-</button>
+          </div>
+          <div class="button__row">
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator">*</button>
+          </div>
+          <div class="button__row">
+            <button class="number double">0</button>
+            <button class="decimal">.</button>
+            <button class="operator">/</button>
+          </div>
         </div>
-        <div class="controls_colors" id="jsColors">
-            <div class="controls_color jsColor" style="background-color: black"></div>
-            <div class="controls_color jsColor" style="background-color: white"></div>
-            <div class="controls_color jsColor" style="background-color:
-            red"></div>
-            <div class="controls_color jsColor" style="background-color: orange"></div>
-            <div class="controls_color jsColor" style="background-color: yellow"></div>
-            <div class="controls_color jsColor" style="background-color: green"></div>
-            <div class="controls_color jsColor" style="background-color: skyblue"></div>
-            <div class="controls_color jsColor" style="background-color: blue"></div>
-            <div class="controls_color jsColor" style="background-color: navy"></div>
-        </div>
+      </div>
+      <img class="logo" src="data/codestates-logo.png" />
     </div>
-    <script src="app.js"></script>
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>
